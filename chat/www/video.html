@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html">
+<html style="overflow: auto; overflow-x:hidden">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312"> 
+<title>LYXWebRTC</title>
+<link rel="stylesheet" type="text/css" href="www/rtclyx.css" />
+</head>
+<body>
+<body background="C:\Users\Administrator\Desktop\logo.jpg";>
+<div id="loginpage" class="page" style="text-align:center;width:100%;">
+WebRTC远程会议系统
+<form id='nameform' action='index.html' method='get' >
+<table width="208" border="0" align="center" cellpadding="5" cellspacing="0">
+<tr>
+<td class="grey" style="text-align:center">请输入登陆的用户名和房间号</td>
+</tr>
+<tr>
+<td class="title">用户名</td>
+</tr>
+<tr>
+<td><input id='username' type='text' placeHolder="如lyx" autofocus='autofocus' class="username" size="30"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="title">房间号</td>
+</tr>
+<tr>
+<td><input id='roomname' type='text' placeHolder="如123" autofocus='autofocus' class="roomname" size="30"></td>
+</tr>
+<tr>
+<td align="center"><input id='loginbutton' type='button' value='进入聊天室' width="70" height="21"></td>
+</tr>
+</table>
+</form>
+</div>
+<div id="userlist" style="text-align:right;">
+<p style="text-align:center;">房间成员</p>
+<textarea id='users'  readonly='readonly'></textarea>
+</div>
+<div id="videochatroom">video chat room
+</div>
+<div id="textchatroom">
+<p style="text-align:center;">聊天窗口</p>
+<textarea id='messages' readonly='readonly'></textarea>
+<input id='sendinput'  />
+</div>
+<script src="javascript/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="javascript/socket.io.js" type="text/javascript"></script>
+<script src="javascript/simplewebrtc.bundle.js" type="text/javascript"></script>
+<script src="javascript/draggable.js" type="text/javascript"></script>
+<script src="javascript/rtclyx.js" type="text/javascript"></script>
+</body>
+</html>
+
